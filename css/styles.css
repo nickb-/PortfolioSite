@@ -1,65 +1,64 @@
 body {
-    padding-top: 80px;
-    margin: 0 5%;
-    font-family: "Open Sans", sans-serif;
-    color: #2d3c49;
+  padding-top: 80px;
+  margin: 0 5%;
+  font-family: "Open Sans", sans-serif;
+  color: #2d3c49;
 }
 
 header {
-    width: 100%;
-    height: 110px;
+  width: 100%;
+  height: 110px;
 }
 
 hr {
-    border-top: 2px solid;
-    color: #7d97ad;
+  border-top: 2px solid;
+  color: #7d97ad;
 }
 
 header h1, h3 {
-    font-weight: normal;
-    text-align: right;
+  font-weight: normal;
+  text-align: right;
 }
 
 section h2 {
-    color: #7d97ad;
-    font-weight: normal;
-    text-align: left;
+  color: #7d97ad;
+  font-weight: normal;
+  text-align: left;
 }
 
 .logo {
-    float: left;
-    width: 98px;
-    height: 86px;
+  float: left;
+  width: 98px;
+  height: 86px;
 }
 
 .flagship img {
-    width: 100%;
-    height: auto;
-    max-height: 400px;
-    order: 1;
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  order: 1;
 }
 
 .gallery {
   display: flex;
   flex-wrap: wrap;
 }
+
 .featured_work {
   order: 2;
 }
 
 .featured {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .featured img {
-    height: auto;
-    min-width: 110px;
-    max-height: 110px;
+  height: auto;
+  min-width: 110px;
+  max-height: 110px;
 }
-
-
 
 /* Media Queries
    -------------
@@ -69,42 +68,43 @@ section h2 {
      2. > 1120px: increase margin and adjust layout
 */
 @media screen and (max-width: 450px) {
-    h1 { font-size: 24px; }
-    h2 { font-size: 20px; }
-    h3 { font-size: 16px; }
-    .logo {
-        width: 86px;
-        height: 64px;
-    }
+  h1 { font-size: 24px; }
+  h2 { font-size: 20px; }
+  h3 { font-size: 16px; }
+  .logo {
+    width: 86px;
+    height: 64px;
+  }
 }
 
 @media screen and (min-width: 1120px) {
-    .container {
-      margin: 0 16%;
-    }
+  .container {
+    margin: 0 16%;
+  }
 
-    .flagship {
-      max-width: 60%;
-      order: 2;
-    }
+  .flagship {
+    max-width: 60%;
+    order: 2;
+  }
 
-    .flagship img {
-        width: 100%;
-        height: auto;
-        float: right;
-        margin: 88px 0 0 5%;
-        max-height: 400px;
-    }
+  .flagship img {
+    width: 100%;
+    height: auto;
+    float: right;
+    margin: 88px 0 0 5%;
+    max-height: 400px;
+  }
 
-    .featured_work {
-      order: 1;
-      max-width: 40%;
-    }
+  .featured_work {
+    order: 1;
+    max-width: 40%;
+  }
 
-    .featured {
-      flex-direction: column;
-    }
-    .featured img {
-      max-width: 80%;
-    }
+  .featured {
+    flex-direction: column;
+  }
+
+  .featured img {
+    max-width: 80%;
+  }
 }
