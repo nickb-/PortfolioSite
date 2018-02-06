@@ -35,7 +35,6 @@ section h2 {
 .flagship img {
   width: 100%;
   height: auto;
-  max-height: 400px;
   order: 1;
 }
 
@@ -90,9 +89,7 @@ section h2 {
   .flagship img {
     width: 100%;
     height: auto;
-    float: right;
     margin: 88px 0 0 5%;
-    max-height: 400px;
   }
 
   .featured_work {
