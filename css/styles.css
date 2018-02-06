@@ -28,18 +28,10 @@ section h2 {
 
 .logo {
     float: left;
-    width: 86px;
+    width: 98px;
     height: 86px;
 }
 
-/*
-ideas:
-set breakpoints:
-  maximum breakspoint: 1300px, center on page after this
-  700px +    figure captions underneath images
-  500 - 700: captions to right, single column and reduce font size
-  < 500px: captions underneath images and check image size
-*/
 .flagship img {
     width: 100%;
     height: auto;
@@ -65,8 +57,9 @@ set breakpoints:
     height: auto;
     min-width: 110px;
     max-height: 110px;
-    justify-content: center;
 }
+
+
 
 /* Media Queries
    -------------
@@ -80,7 +73,7 @@ set breakpoints:
     h2 { font-size: 20px; }
     h3 { font-size: 16px; }
     .logo {
-        width: 64px;
+        width: 86px;
         height: 64px;
     }
 }
@@ -91,7 +84,7 @@ set breakpoints:
     }
 
     .flagship {
-      max-width: 70%;
+      max-width: 60%;
       order: 2;
     }
 
@@ -105,10 +98,13 @@ set breakpoints:
 
     .featured_work {
       order: 1;
-      max-width: 30%;
+      max-width: 40%;
     }
 
     .featured {
       flex-direction: column;
+    }
+    .featured img {
+      max-width: 80%;
     }
 }
