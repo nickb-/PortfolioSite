@@ -1,6 +1,6 @@
 body {
     padding-top: 80px;
-    padding: 80px;
+    margin: 0 5%;
     font-family: "Open Sans", sans-serif;
     color: #2d3c49;
 }
@@ -20,10 +20,9 @@ header h1, h3 {
     text-align: right;
 }
 
-section h3 {
+section h2 {
     color: #7d97ad;
     font-weight: normal;
-    font-size: 30px;
     text-align: left;
 }
 
@@ -45,6 +44,15 @@ set breakpoints:
     width: 100%;
     height: auto;
     max-height: 400px;
+    order: 1;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.featured_work {
+  order: 2;
 }
 
 .featured {
@@ -53,11 +61,54 @@ set breakpoints:
     width: 100%;
 }
 
-/*
- check left padding on these, it is annoying
-*/
 .featured img {
     height: auto;
-    min-width: 140px;
-    max-height: 140px;
+    min-width: 110px;
+    max-height: 110px;
+    justify-content: center;
+}
+
+/* Media Queries
+   -------------
+   Breakpoints:
+     default: 451 - 1119px
+     1. < 450px, redce logo size and font size
+     2. > 1120px: increase margin and adjust layout
+*/
+@media screen and (max-width: 450px) {
+    h1 { font-size: 24px; }
+    h2 { font-size: 20px; }
+    h3 { font-size: 16px; }
+    .logo {
+        width: 64px;
+        height: 64px;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .container {
+      margin: 0 16%;
+    }
+
+    .flagship {
+      max-width: 70%;
+      order: 2;
+    }
+
+    .flagship img {
+        width: 100%;
+        height: auto;
+        float: right;
+        margin: 88px 0 0 5%;
+        max-height: 400px;
+    }
+
+    .featured_work {
+      order: 1;
+      max-width: 30%;
+    }
+
+    .featured {
+      flex-direction: column;
+    }
 }
