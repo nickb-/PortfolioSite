@@ -5,7 +5,7 @@ body {
   color: #2d3c49;
 }
 
-header {
+.page_header {
   display: flex;
   justify-content: space-between; /* recreates the placement of log and titles */
   width: 100%;
@@ -24,7 +24,7 @@ hr {
   text-align: right;
 }
 
-section h2 {
+.section_header {
   color: #7d97ad;
   font-weight: normal;
   text-align: left;
@@ -81,7 +81,7 @@ section h2 {
   h3 {
     font-size: 16px;
   }
-  
+
   .logo {
     width: 86px;
     height: 72px;
