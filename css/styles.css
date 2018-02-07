@@ -13,8 +13,7 @@ header {
 }
 
 hr {
-  border-top: 2px solid;
-  color: #7d97ad;
+  border-top: 2px solid #7d97ad;
 }
 
 .header_title {
