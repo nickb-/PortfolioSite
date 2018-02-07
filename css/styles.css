@@ -98,12 +98,6 @@ hr {
     order: 2;
   }
 
-  .flagship_image {
-    width: 100%;
-    height: auto;
-    margin: 88px 0 0 5%;
-  }
-
   .featured_work {
     order: 1;
     max-width: 40%;
@@ -111,9 +105,5 @@ hr {
 
   .featured {
     flex-direction: column;
-  }
-
-  .featured_image {
-    max-width: 80%;
   }
 }
