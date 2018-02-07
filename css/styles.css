@@ -1,3 +1,20 @@
+/*
+ * styles.css
+ * ----------
+ *
+ * Contents:
+ *   1. GLOBAL
+ *   2. HEADER
+ *   3. SECTIONS
+ *     i) FLAGSHIP
+ *     ii) FEATURED WORK
+ *   4. MEDIA QUERIES
+ *
+ * Nick Burns
+ * Feb 2018
+*/
+
+/* ---- >>> GLOBAL <<< ----*/
 body {
   padding-top: 80px;
   margin: 0 5%;
@@ -5,9 +22,10 @@ body {
   color: #2d3c49;
 }
 
+/* ---- >>> HEADER <<< ----*/
 .page_header {
   display: flex;
-  justify-content: space-between; /* recreates the placement of log and titles */
+  justify-content: space-between; /* placement of logo and titles */
   width: 100%;
   height: 110px;
 }
@@ -19,15 +37,9 @@ hr {
 .header_title {
   display: flex;
   flex-direction: column;
-  justify-content: space-around; /* makes sure the titles don't overlap with the hr */
+  justify-content: space-around; /* titles don't overlap with the hr */
   font-weight: normal;
   text-align: right;
-}
-
-.section_header {
-  color: #7d97ad;
-  font-weight: normal;
-  text-align: left;
 }
 
 .logo {
@@ -35,12 +47,21 @@ hr {
   height: 86px;
 }
 
+/* ---- >>> SECTIONS <<< ----*/
+.section_header {
+  color: #7d97ad;
+  font-weight: normal;
+  text-align: left;
+}
+
+/* ---- FLAGSHIP ----*/
 .flagship_image {
   width: 100%;
   height: auto;
   order: 1;
 }
 
+/* ---- FEATURED WORK ----*/
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -62,8 +83,8 @@ hr {
   max-height: 110px;
 }
 
-/* Media Queries
-   -------------
+/* ---- >>> MEDIA QUERIES <<< ----*/
+/*
    Breakpoints:
      default: 451 - 1119px
      1. < 450px, redce logo size and font size
