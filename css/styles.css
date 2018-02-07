@@ -36,7 +36,7 @@ section h2 {
   height: 86px;
 }
 
-.flagship img {
+.flagship_image {
   width: 100%;
   height: auto;
   order: 1;
@@ -57,7 +57,7 @@ section h2 {
   width: 100%;
 }
 
-.featured img {
+.featured_image {
   height: auto;
   min-width: 110px;
   max-height: 110px;
@@ -82,7 +82,7 @@ section h2 {
 
 @media screen and (min-width: 1120px) {
   .container {
-    margin: 0 16%;
+    margin: 0 10%;
   }
 
   .flagship {
@@ -90,7 +90,7 @@ section h2 {
     order: 2;
   }
 
-  .flagship img {
+  .flagship_image {
     width: 100%;
     height: auto;
     margin: 88px 0 0 5%;
@@ -105,7 +105,7 @@ section h2 {
     flex-direction: column;
   }
 
-  .featured img {
+  .featured_image {
     max-width: 80%;
   }
 }
