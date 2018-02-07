@@ -6,6 +6,8 @@ body {
 }
 
 header {
+  display: flex;
+  justify-content: space-between; /* recreates the placement of log and titles */
   width: 100%;
   height: 110px;
 }
@@ -15,7 +17,10 @@ hr {
   color: #7d97ad;
 }
 
-header h1, h3 {
+.header_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /* makes sure the titles don't overlap with the hr */
   font-weight: normal;
   text-align: right;
 }
@@ -27,7 +32,6 @@ section h2 {
 }
 
 .logo {
-  float: left;
   width: 98px;
   height: 86px;
 }
@@ -72,7 +76,7 @@ section h2 {
   h3 { font-size: 16px; }
   .logo {
     width: 86px;
-    height: 64px;
+    height: 72px;
   }
 }
 
